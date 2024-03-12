@@ -1,0 +1,84 @@
+/**
+ *
+ * You can write your CSS code here, DO NOT touch the default JavaScript file
+ * because it will make it harder for you to update.
+ * 
+ */
+
+
+ 
+ datalist {
+    position: absolute;
+    max-height: 20em;
+    border: 0 none;
+    overflow-x: hidden;
+    overflow-y: auto;
+  }
+  
+  datalist option {
+    font-size: 0.8em;
+    padding: 0.3em 1em;
+    background-color: #ccc;
+    cursor: pointer;
+  }
+  
+  /* option active styles */
+  datalist option:hover,
+  datalist option:focus {
+    color: #fff;
+    background-color: #036;
+    outline: 0 none;
+  }
+  
+.accordion-icon {
+    float: right;
+    font-size: 1.2em;
+    margin-top: 2px;
+    transition: transform 0.3s ease-in-out;
+}
+
+[aria-expanded="true"] .accordion-icon {
+    transform: rotate(90deg);
+}
+
+.btn.btn-link.active {
+    color: #800000;
+    font-weight: 600;
+    background-color: #f8fafb;
+}
+
+/* .sidebar {
+    height: 100vh;
+    overflow-y: scroll;
+} */
+/* .sidee.nav-item.dropdown {
+    height: auto;
+    overflow-y: auto;
+} */
+.main-sidebar.sidebar-style-2 {
+    height: 100vh;
+    overflow-y: scroll !important;
+}
+.nicescroll-cursors {
+    /* hidden */
+    display: none !important;
+}
+.nicescroll-rails {
+    /* hidden */
+    display: none !important;
+}
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+    background: rgb(153, 153, 153);
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: rgb(134, 134, 134);
+}

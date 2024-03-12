@@ -1,0 +1,96 @@
+.gradient-custom-2 {
+    /* fallback for old browsers */
+    background: #fccb90;
+
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: -webkit-linear-gradient(
+        to right,
+        #ee7724,
+        #d8363a,
+        #dd3675,
+        #b44593
+    );
+
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background: linear-gradient(to right, #ee7724, #d8363a, #dd3675, #b44593);
+}
+
+body {
+    background-color: #eee;
+}
+
+@media (min-width: 768px) {
+    .gradient-form {
+        height: 100vh !important;
+    }
+}
+@media (min-width: 769px) {
+    .gradient-custom-2 {
+        border-top-right-radius: 0.3rem;
+        border-bottom-right-radius: 0.3rem;
+    }
+}
+
+/* Input form Style */
+
+input[type="text"] {
+    border: 2px solid #afbdcf;
+    border-radius: 5px;
+    height: 47px;
+    width: 300px;
+    color: #000000;
+    font-size: 14px;
+    padding-left: 20px;
+    box-shadow: none;
+}
+
+/* Label style after Input feild is in focus. Can also use input:focus ~ label to select sibling. */
+
+.has-focus,
+.has-content,
+input:focus + label,
+input:valid + label {
+    font-size: 12px !important;
+    color: #afbdcf !important;
+    top: -8px !important;
+    left: 10px !important;
+    background: #ffffff !important;
+    padding: 0px 5px 0px 5px !important;
+}
+
+.has-input input {
+    padding-top: 20px;
+}
+
+.input_wrap {
+    width: auto;
+    height: auto;
+    position: relative;
+}
+
+.input_wrap label {
+    font-family: arial;
+    font-size: 16px;
+    color: #afbdcf;
+    padding: 14px;
+    position: absolute;
+    top: -6px;
+    left: 0;
+    transition: 0.2s ease all;
+    -moz-transition: 0.2s ease all;
+    -webkit-transition: 0.2s ease all;
+    pointer-events: none;
+}
+
+input[type="text"]:focus {
+    outline: none;
+}
+
+input:focus {
+    outline: none !important;
+    box-shadow: none !important;
+}
+
+#btn-login {
+    border: none !important;
+}
